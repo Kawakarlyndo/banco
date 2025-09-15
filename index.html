@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramas de Engenharia de Software</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0066ff;
+            color: #000000;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #1a2530);
+            color: rgb(0, 110, 255);
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Diagramas e Tópicos de Engenharia de Software</h1>
+            <p>Visualize os principais artefatos do desenvolvimento de software</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="topics-grid">
+            <!-- Diagrama ER -->
+            <div class="topic-card">
+                <div class="topic-image">
+                    <img src="img/deepseek_mermaid_20250915_f41713.svg" alt="Diagrama de Entidade e Relacionamento (E-R)">
+                </div>
+                <div class="topic-content">
+                    <h2 class="topic-title">Diagrama de Entidade e Relacionamento (E-R)</h2>
+                </div>
+            </div>
+            
+            <!-- Tabelas no banco relacional -->
+            <div class="topic-card">
+                <div class="topic-image">
+                    <img src="img/deepseek_mermaid_20250915_a0250f.svg" alt="Tabelas no banco relacional">
+                </div>
+                <div class="topic-content">
+                    <h2 class="topic-title">Diagrama UML de Casos de Uso do Sistema VOLKS</h2>
+                </div>
+            </div>
+            
+            <!-- Caso de uso -->
+            <div class="topic-card">
+                <div class="topic-image">
+                    <img src="img/deepseek_mermaid_20250915_9ca6cc.svg" alt="Caso de uso">
+                </div>
+                <div class="topic-content">
+                    <h2 class="topic-title">Fluxo Típico de uma Venda:</h2>
+                </div>
+            </div>
+            
+            <!-- Diagrama de classes -->
+            <div class="topic-card">
+                <div class="topic-image">
+                    <img src="https://static.javatpoint.com/core/images/what-is-class-diagram3.png" alt="Diagrama de classes">
+                </div>
+                <div class="topic-content">
+                    <h2 class="topic-title">Diagrama de classes</h2>
+                </div>
+            </div>
+            
+            <!-- Diagrama de sequência -->
+            <div class="topic-card">
+                <div class="topic-image">
+                    <img src="img/deepseek_mermaid_20250915_c35c7d.svg" alt="Diagrama de sequência">
+                </div>
+                <div class="topic-content">
+                    <h2 class="topic-title">Diagrama de Sequência para Cadastro de Veículo</h2>
+                </div>
+            </div>
+            <div class="topic-card">
+                <div class="topic-image">
+                    <img src="img/deepseek_mermaid_20250915_60c3ad.svg" alt="Diagrama de sequência">
+                </div>
+                <div class="topic-content">
+                    <h2 class="topic-title">Venda com veículo indisponível</h2>
+                </div>
+            </div>
+            
+            <!-- Diagrama de colaboração -->
+            <div class="topic-card">
+                <div class="topic-image">
+                    <img src="https://www..net/publication/220816709/figure/fig3/AS:393714146136065@1470926309441/Collaboration-diagram-for-the-use-case-Request-a-ride.png" alt="Diagrama de colaboração">
+                </div>
+                <div class="topic-content">
+                    <h2 class="topic-title">Diagrama de colaboração</h2>
+                </div>
+            </div>
+            
+            <!-- Ferramenta de case -->
+            <div class="topic-card">
+                <div class="topic-image">
+                    <img src="https://cdn1.om/guide/uml/what-is-uml/02-uml-history.png" alt="Ferramenta de case">
+                </div>
+                <div class="topic-content">
+                    <h2 class="topic-title">Ferramenta de case</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Página de Diagramas de Engenharia de Software &copy; 2023</p>
+    </footer>
+
+    <script>
+        // Adiciona um efeito de carregamento suave às imagens
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('.topic-image img');
+            
+            images.forEach(img => {
+                // Adiciona um loader enquanto a imagem não carrega
+                img.style.opacity = '0';
+                img.addEventListener('load', function() {
+                    this.style.transition = 'opacity 0.5s ease';
+                    this.style.opacity = '1';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
